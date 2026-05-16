@@ -18,7 +18,7 @@ A `.glossary.md` file that illustrates an edge case, a common pattern, or a real
 
 ## Working with the LearnSpec charter
 
-The shared design principles, universal frontmatter fields, and cross-format directives are defined in the [LearnSpec Architecture Charter](https://github.com/learnspec/.github/blob/main/CHARTER.md). Any change that touches these shared rules must be coordinated with the charter and the other format repos.
+The shared design principles, universal frontmatter fields, and cross-format directives are defined in the [LearnSpec Architecture Charter](https://learnspec.org/charter/). Any change that touches these shared rules must be coordinated with the charter and the other format repos.
 
 ## License
 

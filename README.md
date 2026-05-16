@@ -8,7 +8,7 @@ A `.glossary.md` file is valid Markdown — readable by humans, versionable in G
 
 ## Specification
 
-See [SPEC.md](./SPEC.md) for the full format specification. The shared design principles, universal frontmatter fields, and cross-format directives (`!import`, `!ref`, `!checkpoint`) are defined in the [LearnSpec Architecture Charter](https://github.com/learnspec/.github/blob/main/CHARTER.md).
+See [SPEC.md](./SPEC.md) for the full format specification. The shared design principles, universal frontmatter fields, and cross-format directives (`!import`, `!ref`, `!checkpoint`) are defined in the [LearnSpec Architecture Charter](https://learnspec.org/charter/).
 
 ## Related formats
 
