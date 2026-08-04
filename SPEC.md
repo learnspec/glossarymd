@@ -1,7 +1,7 @@
-# GlossaryMD — Format Specification v0.1
+# GlossaryMD — Format Specification v0.2
 
 > Part of the **LearnSpec** suite  
-> Status: Draft — May 10, 2026
+> Status: Draft — May 10, 2026 (v0.2: August 4, 2026)
 
 ---
 
@@ -90,7 +90,7 @@ An optional `term` block may be placed **immediately after the `##` heading**, b
 ````markdown
 ## Photosynthesis
 
-```term id:photosynthesis aliases:["Photosynthèse","photosynthesis"] related:["Chloroplast","Chlorophyll"] tags:[biology,botany]
+```term id:photosynthesis aliases:["Photosynthèse","photosynthesis"] related:["Chloroplast","Chlorophyll"] tags:[biology,botany] wikidata:Q131746
 ```
 
 The process by which plants convert sunlight into **chemical energy**.
@@ -102,6 +102,7 @@ The process by which plants convert sunlight into **chemical energy**.
 | `aliases` | Optional | Alternative names for the term — variants, abbreviations, names in other languages. The player may use them for detection in text. |
 | `related` | Optional | Display names of related terms in this glossary or in other referenced GlossaryMD files. The player resolves the corresponding slugs. |
 | `tags` | Optional | Term-specific tags. Added to the file-level tags from frontmatter. |
+| `wikidata` | Optional | The [Wikidata](https://www.wikidata.org) entity this term denotes, as a QID (e.g. `Q131746`), or the literal `none` to record that a mapping was considered and deliberately left unset. Lets tools align a term with structured linked data — e.g. resolving a canonical image, a translation, or a definition from an external knowledge base — without guessing from the term's label alone. Absent by default; consumers that don't use linked data can ignore it entirely. |
 
 ---
 
@@ -222,6 +223,7 @@ Slugification rules: lowercase, diacritics removed, spaces and apostrophes → h
 | Fenced block within a definition | Error |
 | Term name conflict across multiple GlossaryMD files referenced in the same document | Warning |
 | Term in `related` matching no term in the glossary | Warning |
+| `wikidata` value that is neither a QID (`Q\d+`) nor `none` | Warning |
 
 ### Strict Mode (`--strict`)
 
