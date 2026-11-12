@@ -163,7 +163,7 @@ A GlossaryMD is declared via the `!ref` directive at the top of the consuming do
 
 ```markdown
 !ref ./glossary-biology.glossary.md
-!ref https://github.com/neuroneo/commons/blob/main/glossaries/en/biology.glossary.md
+!ref https://github.com/memoneoapp/commons/blob/main/glossaries/en/biology.glossary.md
 ```
 
 Multiple `!ref` directives may coexist. Terms from all referenced glossaries share the same namespace — term names must be unique across all GlossaryMD files referenced in a given document.
