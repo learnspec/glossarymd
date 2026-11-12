@@ -33,8 +33,12 @@ See [SPEC.md](./SPEC.md) for the full format specification. The shared design pr
 
 | Project | Type | Link |
 |---------|------|------|
-| neuroneo.md | Web player + API + MCP server | [neuroneo.md](https://www.neuroneo.md) |
+| memoneo | Web player + API + MCP server | [memoneo.app](https://memoneo.app) |
 | pylearnspec | Python parser & validator | learnspec/pylearnspec |
+
+## Maintainers
+
+This repository is part of the [LearnSpec](https://learnspec.org) suite, initiated and maintained by [memoneo](https://memoneo.app). Issues and pull requests are welcome.
 
 ## License
 
